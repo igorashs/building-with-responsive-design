@@ -55,6 +55,14 @@ html {
   background-image: url('images/share-variant.svg');
 }
 
+.i-tag {
+  background-image: url('images/tag.svg');
+}
+
+.i-briefcase {
+  background-image: url('images/briefcase.svg');
+}
+
 /* header */
 
 .main-nav {
@@ -246,7 +254,7 @@ html {
 }
 
 .container > * {
-  margin: 0 2rem 6rem 2rem;
+  margin-bottom: 6rem;
 }
 
 /* latest-news */
@@ -275,4 +283,107 @@ html {
 .latest-news h3 {
   padding: 1rem 0;
   font-size: 1.6rem;
+}
+
+/* latest-foundings */
+
+.latest-foundings-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.latest-foundings-header {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / -1;
+  font-size: 1.6rem;
+  color: rgb(255, 68, 34);
+}
+
+.latest-foundings-header h2 {
+  font-size: 2.8rem;
+}
+
+.latest-foundings-header ul {
+  display: flex;
+}
+
+.latest-foundings-header li:nth-child(2)::before,
+.latest-foundings-header li:nth-child(2)::after {
+  content: '|';
+  padding: 0 1rem;
+}
+
+.latest-founding {
+  position: relative;
+  color: rgb(70, 70, 70);
+  background-color: rgb(255, 250, 248);
+}
+
+.latest-founding img {
+  position: absolute;
+  margin: 1rem;
+  width: 60px;
+  height: 60px;
+}
+
+.latest-founding > h4 {
+  padding: 1rem 0 1rem calc(60px + 2.5rem);
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: rgb(255, 68, 34);
+}
+
+.latest-founding hgroup {
+  padding: 1rem 0 1rem calc(60px + 2.5rem);
+  background-color: rgba(255, 68, 34, 0.08);
+}
+
+.latest-founding hgroup h4 {
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.latest-founding hgroup h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(112, 112, 112);
+}
+
+.tag-category,
+.short-description {
+  padding: 1.5rem 1rem;
+}
+
+.tag-category {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid rgba(255, 67, 34, 0.3);
+}
+
+.tag-category li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.tag-category li:last-of-type {
+  margin-bottom: 0;
+}
+
+.tag-category li .icon {
+  margin-right: 1rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.short-description {
+  padding-top: 0;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.short-description a {
+  color: #999;
 }
