@@ -485,3 +485,48 @@ html {
   border-radius: 50%;
   background-color: rgb(255, 68, 34);
 }
+
+/* latest-deals */
+
+.latest-deals-container {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+}
+
+.latest-deals-header {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / -1;
+  font-size: 1.6rem;
+  color: rgb(255, 68, 34);
+}
+
+.latest-deals-header h2 {
+  font-size: 2.8rem;
+}
+
+.deal-img {
+  display: block;
+  width: 100%;
+  padding-top: 73%;
+  background-position: left;
+  background-size: cover;
+}
+
+.latest-deal h3 {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+}
+
+.latest-deal h4 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: rgb(77, 77, 77);
+}
+
+.initial-price {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  color: #999;
+}
