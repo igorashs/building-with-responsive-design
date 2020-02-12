@@ -32,6 +32,9 @@ html {
   display: block;
   width: 2.4rem;
   height: 2.4rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* icons */
@@ -42,6 +45,14 @@ html {
 
 .i-menu {
   background-image: url('images/menu.svg');
+}
+
+.i-clock {
+  background-image: url('images/clock-outline.svg');
+}
+
+.i-share {
+  background-image: url('images/share-variant.svg');
 }
 
 /* header */
@@ -127,3 +138,106 @@ html {
   line-height: 1.3;
   background-color: rgb(255, 221, 51);
 }
+
+/* main */
+
+/* recent-articles */
+
+.recent-articles-container {
+  margin: 2px 5px;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 265px 265px;
+}
+
+.main-article {
+  position: relative;
+  grid-row: 1 / span 2;
+}
+
+.recent-article {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-article .recent-article-header {
+  position: absolute;
+}
+
+.recent-article-header {
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+  color: #fff;
+  z-index: 10;
+}
+
+.recent-article-header h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.recent-article-header h2 {
+  font-size: 2.8rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.main-article .recent-article-header h2 {
+  font-size: 5.2rem;
+  padding-top: 0;
+}
+
+.hero {
+  position: absolute;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 67, 10, 0.85) 20%,
+    rgba(255, 67, 10, 0.5) 60%,
+    transparent
+  );
+}
+
+.hero time {
+  flex: 1;
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: end;
+  z-index: 30;
+}
+
+.logo-large {
+  height: 96px;
+  flex: 1;
+  background-image: url('images/tnw.svg');
+  background-repeat: no-repeat;
+  z-index: 30;
+}
+
+.article-author {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.article-author .icon {
+  margin-left: 0.5rem;
+  height: 1.8rem;
+  height: 1.8rem;
+}
+
+/* container */
+
+/* latest-news */
