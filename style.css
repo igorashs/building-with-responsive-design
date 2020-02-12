@@ -91,6 +91,18 @@ html {
   background-image: url('images/email.svg');
 }
 
+.i-tnw-small {
+  background-image: url('images/tnw-small.svg');
+  width: 45px;
+  height: 9px;
+}
+
+.i-stackpath {
+  background-image: url('images/stackpath.svg');
+  width: 75px;
+  height: 9px;
+}
+
 /* header */
 
 .main-nav {
@@ -557,4 +569,62 @@ html {
   font-size: 1.2rem;
   text-decoration: line-through;
   color: #999;
+}
+
+/* main-footer */
+
+.social-links {
+  padding: 4rem 0;
+  font-size: 1.3rem;
+  color: rgb(199, 199, 199);
+  letter-spacing: -0.9px;
+  background-color: rgb(19, 19, 19);
+}
+
+.social-links ul {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links .icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.social-links ul:first-of-type {
+  margin-bottom: 3rem;
+}
+
+.social-links ul:first-of-type li {
+  margin-right: 1.5rem;
+  padding: 11px;
+  background-color: rgb(47, 47, 47);
+  border-radius: 50%;
+}
+
+.social-links ul:first-of-type li:last-of-type {
+  margin-right: 0;
+}
+
+.social-links ul:last-of-type li {
+  margin-right: 1.5rem;
+}
+
+.social-links ul:last-of-type li:last-of-type {
+  margin-right: 0;
+}
+
+/* change to block */
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  font-size: 1.3rem;
+  color: #999;
+  background: #000;
+  text-align: center;
+}
+
+.copyright .icon {
+  display: inline-block;
 }
