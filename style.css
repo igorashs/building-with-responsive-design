@@ -240,4 +240,39 @@ html {
 
 /* container */
 
+.container {
+  max-width: 1152px;
+  margin: 6rem auto;
+}
+
+.container > * {
+  margin: 0 2rem 6rem 2rem;
+}
+
 /* latest-news */
+
+.latest-news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  gap: 2rem;
+}
+
+.latest-news-container h2 {
+  grid-column: 1 / -1;
+  font-size: 2.8rem;
+  color: rgb(255, 68, 34);
+}
+
+.latest-news a {
+  display: block;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50%;
+}
+
+.latest-news h3 {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+}
