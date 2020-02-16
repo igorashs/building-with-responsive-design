@@ -7,3 +7,6 @@
 ## Assignment
 
 > Build a responsive website, cloning the home page of [The Next Web](https://thenextweb.com/)
+
+## License
+This project is licensed under the MIT License
